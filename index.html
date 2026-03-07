@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Junior Game Developer</title>
+    <title>Alexandre Trudelle | Junior Game Developer</title>
     <style>
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; background: #f4f4f4; color: #333; }
         header { border-bottom: 2px solid #333; padding-bottom: 20px; margin-bottom: 30px; }
@@ -13,6 +13,24 @@
         a { color: #0066cc; text-decoration: none; font-weight: bold; }
         a:hover { text-decoration: underline; }
         code { background: #eee; padding: 2px 4px; }
+        
+        /* Video Container to keep it 16:9 */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 20px 0;
+            border-radius: 4px;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -33,6 +51,9 @@
             <h3>2D Monster-Taming RPG (Unity/C#)</h3>
             <p><em>1.5 Years in Development | 13,000+ Lines of Original Code</em></p>
             
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Monster Tamer Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <p>An original IP focused on robust system architecture and data-driven design. Built from the ground up to be professional-grade and scalable.</p>
             
             <h4>Technical Highlights:</h4>
